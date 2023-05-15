@@ -54,7 +54,7 @@ def foreachBatchw(batchDF,batchId):
 
 
 query = kafkastream_DF1.writeStream.foreachBatch(foreachBatchw) \
-        .option("checkpointLocation", "s3://writetos3-15052023/checkpointloc/metadata") \
+        .option("checkpointLocation", "s3://writetos3-15052023/checkpointloc") \
         .start()
 
 #Stream \
